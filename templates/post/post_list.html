@@ -12,9 +12,6 @@
         {% for post in posts %}
         <article>
             <h2>Em: {{ post.pub_date|date:"d / m / Y" }}</h2>
-            {% if post.categoria %}
-                <span style="font-weight: bold;">Categoria: {{ post.categoria }}</span>
-            {% endif %}
             <p>{{ post.body_text }}</p>
         </article>
         {% endfor %}
